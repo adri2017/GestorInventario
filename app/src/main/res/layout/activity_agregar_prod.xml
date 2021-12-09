@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1F2859"
+    tools:context="OperacionesPedido.AgregarPed">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="371dp"
+        android:layout_height="600dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="53dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="83dp"
+        android:elevation="8dp"
+        app:cardCornerRadius="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tvidimagen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:visibility="invisible"
+                app:layout_constraintBottom_toTopOf="@+id/edtagreNombre"
+                app:layout_constraintEnd_toStartOf="@+id/imageprod"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnimg" />
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnimg"
+                android:layout_width="116dp"
+                android:layout_height="49dp"
+                android:background="@drawable/custom_btn"
+                android:backgroundTint="#1F2859"
+                android:text="Elegir imagen"
+                android:textColor="#CACACA"
+                app:layout_constraintBottom_toTopOf="@+id/edtagreNombre"
+                app:layout_constraintEnd_toStartOf="@+id/imageprod"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.191" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtagreNombre"
+                android:layout_width="280dp"
+                android:layout_height="55dp"
+                android:background="@drawable/edtext_bg"
+                android:backgroundTint="#CACACA"
+                android:ems="10"
+                android:hint="Nombre del producto"
+                android:inputType="textPersonName"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.494"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.278"
+                app:layout_editor_absoluteX="81dp"
+                app:layout_editor_absoluteY="195dp"
+                tools:ignore="DuplicateClickableBoundsCheck" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtagrdescrip"
+                android:layout_width="280dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/edtext_bg"
+                android:backgroundTint="#CACACA"
+                android:ems="10"
+                android:hint="Descripción del producto"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.494"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edtagreNombre" />
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtagrprecio"
+                android:layout_width="280dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/edtext_bg"
+                android:backgroundTint="#CACACA"
+                android:ems="10"
+                android:hint="Precio del producto"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edtagrdescrip" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtagrcantidad"
+                android:layout_width="280dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/edtext_bg"
+                android:backgroundTint="#CACACA"
+                android:ems="10"
+                android:hint="Cantidad"
+                app:layout_constraintBottom_toTopOf="@+id/btnagrprod"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.505"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edtagrprecio"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnagrprod"
+                android:layout_width="280dp"
+                android:layout_height="55dp"
+                android:layout_marginBottom="72dp"
+                android:background="@drawable/custom_btn"
+                android:backgroundTint="#1F2859"
+                android:text="AÑADIR PRODUCTO"
+                android:textColor="#CACACA"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.604"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageprod"
+                android:layout_width="147dp"
+                android:layout_height="128dp"
+                app:layout_constraintBottom_toTopOf="@+id/edtagreNombre"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/btnimg"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@drawable/almacenes" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

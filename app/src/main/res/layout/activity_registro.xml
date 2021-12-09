@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1F2859"
+    tools:context=".Registro">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="371dp"
+        android:layout_height="600dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="83dp"
+        android:layout_marginEnd="20dp"
+        android:elevation="8dp"
+        app:cardCornerRadius="12dp"
+        android:layout_marginBottom="83dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtNombre"
+                android:layout_width="280dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="108dp"
+                android:background="@drawable/edtext_bg"
+                android:backgroundTint="#CACACA"
+                android:drawableStart="@drawable/nombre_icon"
+                android:ems="10"
+                android:hint="Nombre completo"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.494"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_editor_absoluteX="81dp"
+                app:layout_editor_absoluteY="195dp" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtContrasena"
+                android:layout_width="280dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="28dp"
+                android:background="@drawable/edtext_bg"
+                android:backgroundTint="#CACACA"
+                android:drawableStart="@drawable/pass_icon"
+                android:hint="Contraseña"
+                android:inputType="textPassword"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edtCorreo" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtConfContra"
+                android:layout_width="280dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="28dp"
+                android:background="@drawable/edtext_bg"
+                android:backgroundTint="#CACACA"
+                android:drawableStart="@drawable/pass_icon"
+                android:hint="Confirmar Contraseña"
+                android:inputType="textPassword"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.494"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edtContrasena" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtCorreo"
+                android:layout_width="280dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="28dp"
+                android:background="@drawable/edtext_bg"
+                android:backgroundTint="#CACACA"
+                android:drawableStart="@drawable/mail_icon"
+                android:hint="Correo electrónico"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edttlf" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edttlf"
+                android:layout_width="280dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="28dp"
+                android:background="@drawable/edtext_bg"
+                android:backgroundTint="#CACACA"
+                android:drawableStart="@drawable/tlf_icon"
+                android:hint="Teléfono móvil"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.494"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edtNombre" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="#1F2859"
+                android:text="Por favor, introduzca los siguientes\ndatos para completar el registro"
+                android:textSize="20dp"
+                app:layout_constraintBottom_toTopOf="@+id/edtNombre"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnConfRegis"
+                android:layout_width="280dp"
+                android:layout_height="55dp"
+                android:text="COMPLETAR REGISTRO"
+                android:textColor="#CACACA"
+                android:backgroundTint="#1F2859"
+                android:background="@drawable/custom_btn"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edtConfContra" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

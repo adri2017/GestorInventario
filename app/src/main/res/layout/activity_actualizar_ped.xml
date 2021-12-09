@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1F2859"
+    tools:context="OperacionesProd.AgregarProd">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView3"
+        android:layout_width="366dp"
+        android:layout_height="422dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="270dp"
+        android:elevation="8dp"
+        app:cardCornerRadius="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtactdirecped"
+                android:layout_width="280dp"
+                android:layout_height="55dp"
+                android:background="@drawable/edtext_bg"
+                android:backgroundTint="#CACACA"
+                android:ems="10"
+                android:hint="Dirección del pedido"
+                android:inputType="textPersonName"
+                app:layout_constraintBottom_toTopOf="@+id/edtactnomprodped"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_editor_absoluteX="81dp"
+                app:layout_editor_absoluteY="195dp" />
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtactnomprodped"
+                android:layout_width="280dp"
+                android:layout_height="55dp"
+                android:background="@drawable/edtext_bg"
+                android:backgroundTint="#CACACA"
+                android:ems="10"
+                android:hint="Nombre del producto"
+                app:layout_constraintBottom_toTopOf="@+id/edtactnomperped"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edtactdirecped" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtactnomperped"
+                android:layout_width="280dp"
+                android:layout_height="55dp"
+                android:background="@drawable/edtext_bg"
+                android:backgroundTint="#CACACA"
+                android:ems="10"
+                android:hint="Nombre del remitente"
+                app:layout_constraintBottom_toTopOf="@+id/edtactcantped"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edtactnomprodped" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtactcantped"
+                android:layout_width="280dp"
+                android:layout_height="55dp"
+                android:background="@drawable/edtext_bg"
+                android:backgroundTint="#CACACA"
+                android:ems="10"
+                android:hint="Cantidad del producto a enviar"
+                app:layout_constraintBottom_toTopOf="@+id/edtactestado"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edtactnomperped" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtactestado"
+                android:layout_width="280dp"
+                android:layout_height="55dp"
+                android:background="@drawable/edtext_bg"
+                android:backgroundTint="#CACACA"
+                android:ems="10"
+                android:hint="Estado del pedido"
+                app:layout_constraintBottom_toTopOf="@+id/btnactped"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edtactcantped" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnactped"
+                android:layout_width="280dp"
+                android:layout_height="55dp"
+                android:background="@drawable/custom_btn"
+                android:backgroundTint="#1F2859"
+                android:textColor="#CACACA"
+                android:text="ACTUALIZAR PEDIDO"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edtactestado" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="380dp"
+        android:layout_height="240dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:elevation="8dp"
+        app:cardCornerRadius="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView3">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Información actual del pedido"
+                android:textColor="#1F2859"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/tvdirped"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvdirped"
+                android:layout_width="361dp"
+                android:layout_height="25dp"
+                android:text="Direccion: "
+                android:textColor="#1F2859"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/tvnomperped"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+            <TextView
+                android:id="@+id/tvnomperped"
+                android:layout_width="361dp"
+                android:layout_height="25dp"
+                android:text="Dueño del pedido: "
+                android:textColor="#1F2859"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/tvnomprodped"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvdirped" />
+
+            <TextView
+                android:id="@+id/tvnomprodped"
+                android:layout_width="361dp"
+                android:layout_height="25dp"
+                android:text="Producto a enviar: "
+                android:textColor="#1F2859"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/tvcantped"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvnomperped" />
+
+            <TextView
+                android:id="@+id/tvcantped"
+                android:layout_width="361dp"
+                android:layout_height="25dp"
+                android:text="Cantidad de producto: "
+                android:textColor="#1F2859"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/tvestadped"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvnomprodped" />
+
+            <TextView
+                android:id="@+id/tvestadped"
+                android:layout_width="361dp"
+                android:layout_height="25dp"
+                android:text="Estado del pedido: "
+                android:textColor="#1F2859"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvcantped" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

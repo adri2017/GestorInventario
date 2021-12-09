@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/adriu/AndroidStudioProjects/GestorInventario/app/src/main/res/layout/activity_actualizar_ped.xml" value="0.3619791666666667" />
+        <entry key="..\:/Users/adriu/AndroidStudioProjects/GestorInventario/app/src/main/res/layout/activity_actualizar_prod.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/adriu/AndroidStudioProjects/GestorInventario/app/src/main/res/layout/activity_agregar_ped.xml" value="0.2775800711743772" />
+        <entry key="..\:/Users/adriu/AndroidStudioProjects/GestorInventario/app/src/main/res/layout/activity_agregar_prod.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/adriu/AndroidStudioProjects/GestorInventario/app/src/main/res/layout/activity_historial_pedidos.xml" value="0.3619791666666667" />
+        <entry key="..\:/Users/adriu/AndroidStudioProjects/GestorInventario/app/src/main/res/layout/activity_inicio_sesion.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/adriu/AndroidStudioProjects/GestorInventario/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/adriu/AndroidStudioProjects/GestorInventario/app/src/main/res/layout/activity_menu_principal.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/adriu/AndroidStudioProjects/GestorInventario/app/src/main/res/layout/activity_mostrar_prod.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/adriu/AndroidStudioProjects/GestorInventario/app/src/main/res/layout/activity_operaciones_ped.xml" value="0.33" />
+        <entry key="..\:/Users/adriu/AndroidStudioProjects/GestorInventario/app/src/main/res/layout/activity_operaciones_prod.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/adriu/AndroidStudioProjects/GestorInventario/app/src/main/res/layout/activity_registro.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/adriu/AndroidStudioProjects/GestorInventario/app/src/main/res/layout/fragment_enviados.xml" value="0.3619791666666667" />
+        <entry key="..\:/Users/adriu/AndroidStudioProjects/GestorInventario/app/src/main/res/layout/fragment_pendiente.xml" value="0.3619791666666667" />
+        <entry key="..\:/Users/adriu/AndroidStudioProjects/GestorInventario/app/src/main/res/layout/item_inventario.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/adriu/AndroidStudioProjects/GestorInventario/app/src/main/res/layout/item_pedido.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/adriu/AndroidStudioProjects/GestorInventario/app/src/main/res/layout/main_toolbar.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/adriu/AndroidStudioProjects/GestorInventario/app/src/main/res/layout/nav_header.xml" value="0.67" />
+        <entry key="..\:/Users/adriu/AndroidStudioProjects/GestorInventario/app/src/main/res/menu/nav_menu.xml" value="0.36666666666666664" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

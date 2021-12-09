@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1F2859"
+    android:backgroundTint="#1F2859"
+    android:fitsSystemWindows="true"
+    tools:context=".MenuPrincipal">
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/nav_header"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:menu="@menu/nav_menu" />
+
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/white"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/drawer_layout"
+        app:navigationIcon="@drawable/icon_menu"
+        app:titleTextColor="#1F2859" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="378dp"
+                android:layout_height="match_parent">
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:text="Gestor Inventario"
+            android:textAlignment="center"
+            android:textColor="#1F2859"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/btnopprod"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.042" />
+
+        <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnhistorial"
+                    android:layout_width="285dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/custom_btn"
+                    android:backgroundTint="#1F2859"
+                    android:text="Historial de pedidos"
+                    android:textColor="#CACACA"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btnoppedid" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnopprod"
+                    android:layout_width="285dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/custom_btn"
+                    android:backgroundTint="#1F2859"
+                    android:text="Operaciones con\nproductos"
+                    android:textColor="#CACACA"
+                    app:layout_constraintBottom_toTopOf="@+id/btnoppedid"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnoppedid"
+                    android:layout_width="285dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/custom_btn"
+                    android:backgroundTint="#1F2859"
+                    android:text="Operaciones\ncon \npedidos"
+                    android:textColor="#CACACA"
+                    app:layout_constraintBottom_toTopOf="@+id/btnhistorial"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btnopprod" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+</androidx.drawerlayout.widget.DrawerLayout>
+
+
+
+

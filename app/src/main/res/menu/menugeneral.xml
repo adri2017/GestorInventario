@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+    <menu xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Mi Perfil"
+        android:id="@+id/perfil"/>
+
+    <item android:title="Cerrar Sesión"
+        android:id="@+id/cerrar"/>
+
+</menu>

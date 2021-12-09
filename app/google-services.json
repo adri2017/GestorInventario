@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "785933200144",
+    "project_id": "gestorinventario-41b55",
+    "storage_bucket": "gestorinventario-41b55.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:785933200144:android:9b9ef5151fa7340eff9395",
+        "android_client_info": {
+          "package_name": "com.example.gestorinventario"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "785933200144-2s5p418bcuuv2gj2ardn56737hd4v1m9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBxsBlf7d-NQMent7zZfOxwG0XX5wa9TMg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "785933200144-2s5p418bcuuv2gj2ardn56737hd4v1m9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

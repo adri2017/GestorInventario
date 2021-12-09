@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1F2859"
+    tools:context="OperacionesProd.AgregarProd">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="371dp"
+        android:layout_height="600dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="83dp"
+        android:layout_marginEnd="20dp"
+        android:elevation="8dp"
+        app:cardCornerRadius="12dp"
+        android:layout_marginBottom="83dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtidPedido"
+                android:layout_width="280dp"
+                android:layout_height="55dp"
+                android:background="@drawable/edtext_bg"
+                android:backgroundTint="#CACACA"
+                android:ems="10"
+                android:hint="Identificador del pedido"
+                android:inputType="textPersonName"
+                app:layout_constraintBottom_toTopOf="@+id/edtdirecped"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.458">
+
+            </com.google.android.material.textfield.TextInputEditText>
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtdirecped"
+                android:layout_width="280dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="164dp"
+                android:background="@drawable/edtext_bg"
+                android:backgroundTint="#CACACA"
+                android:ems="10"
+                android:hint="Dirección del pedido"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.494"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_editor_absoluteX="81dp"
+                app:layout_editor_absoluteY="195dp" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtnomprodped"
+                android:layout_width="280dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/edtext_bg"
+                android:backgroundTint="#CACACA"
+                android:ems="10"
+                android:hint="Nombre del producto"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.494"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edtdirecped" />
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtnomperped"
+                android:layout_width="280dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/edtext_bg"
+                android:backgroundTint="#CACACA"
+                android:ems="10"
+                android:hint="Nombre del remitente"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edtnomprodped" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtcantped"
+                android:layout_width="280dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="28dp"
+                android:background="@drawable/edtext_bg"
+                android:backgroundTint="#CACACA"
+                android:ems="10"
+                android:hint="Cantidad del producto a enviar"
+                app:layout_constraintBottom_toTopOf="@+id/btnagregarped"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.505"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edtnomperped"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnagregarped"
+                android:layout_width="280dp"
+                android:layout_height="55dp"
+                android:layout_marginBottom="28dp"
+                android:background="@drawable/custom_btn"
+                android:backgroundTint="#1F2859"
+                android:text="AÑADIR PEDIDO"
+                android:textColor="#CACACA"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.505"
+                app:layout_constraintStart_toStartOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

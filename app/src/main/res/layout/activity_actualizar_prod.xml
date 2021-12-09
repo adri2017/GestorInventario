@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1F2859"
+    tools:context="OperacionesProd.AgregarProd">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="375dp"
+        android:layout_height="406dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="270dp"
+        android:elevation="8dp"
+        app:cardCornerRadius="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtactNombre"
+                android:layout_width="280dp"
+                android:layout_height="55dp"
+                android:background="@drawable/edtext_bg"
+                android:backgroundTint="#CACACA"
+                android:ems="10"
+                android:hint="Nombre del producto"
+                android:inputType="textPersonName"
+                app:layout_constraintBottom_toTopOf="@+id/edtactescrip"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_editor_absoluteX="81dp"
+                app:layout_editor_absoluteY="195dp"
+                tools:ignore="DuplicateClickableBoundsCheck" />
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtactprecio"
+                android:layout_width="280dp"
+                android:layout_height="55dp"
+                android:background="@drawable/edtext_bg"
+                android:backgroundTint="#CACACA"
+                android:ems="10"
+                android:hint="Precio del producto"
+                app:layout_constraintBottom_toTopOf="@+id/edtactcantidad"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edtactescrip" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtactcantidad"
+                android:layout_width="280dp"
+                android:layout_height="55dp"
+                android:background="@drawable/edtext_bg"
+                android:backgroundTint="#CACACA"
+                android:ems="10"
+                android:hint="Cantidad"
+                app:layout_constraintBottom_toTopOf="@+id/btnactprod"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edtactprecio" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtactescrip"
+                android:layout_width="280dp"
+                android:layout_height="55dp"
+                android:background="@drawable/edtext_bg"
+                android:backgroundTint="#CACACA"
+                android:ems="10"
+                android:hint="Descripción del producto"
+                app:layout_constraintBottom_toTopOf="@+id/edtactprecio"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edtactNombre" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnactprod"
+                android:layout_width="280dp"
+                android:layout_height="55dp"
+                android:background="@drawable/custom_btn"
+                android:backgroundTint="#1F2859"
+                android:text="ACTUALIZAR PRODUCTO"
+                android:textColor="#CACACA"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edtactcantidad" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="380dp"
+        android:layout_height="240dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:elevation="8dp"
+        app:cardCornerRadius="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Información actual del producto"
+                android:textColor="#1F2859"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/tvnombreact"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvnombreact"
+                android:layout_width="361dp"
+                android:layout_height="25dp"
+                android:text="Nombre: "
+                android:textColor="#1F2859"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/tvdescripact"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+            <TextView
+                android:id="@+id/tvdescripact"
+                android:layout_width="361dp"
+                android:layout_height="60dp"
+                android:text="Descripción: "
+                android:textColor="#1F2859"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/tvcantact"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvnombreact" />
+
+            <TextView
+                android:id="@+id/tvcantact"
+                android:layout_width="361dp"
+                android:layout_height="25dp"
+                android:text="Cantidad: "
+                android:textColor="#1F2859"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/tvprecioact"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvdescripact" />
+
+            <TextView
+                android:id="@+id/tvprecioact"
+                android:layout_width="361dp"
+                android:layout_height="25dp"
+                android:text="Precio: "
+                android:textColor="#1F2859"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvcantact" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
